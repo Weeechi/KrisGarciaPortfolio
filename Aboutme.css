@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+ /*  custom props  */
+:root{
+    --ff-primary: 'Space Mono', monospace;
+    --ff-secondary:'Saira Semi Condensed', sans-serif;
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+  @media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+
+body {
+  background: rgb(240,211,224);
+  background: radial-gradient(circle, rgba(240,211,224,1) 0%, rgba(125,126,126,1) 100%);
+  color: var(--clr-dark);
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+section{
+  padding: 5em 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+
+}
+
+
+
+
+h1, h2 ,h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {font-size: var(--fs-h1)}
+h2 {font-size: var(--fs-h2)}
+h3 {font-size: var(--fs-h3)}
+
+
+#navbar {
+  overflow: hidden;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+#navbar a{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  padding-right: 150px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.content{
+  padding: 16px;
+}
+
+.sticky{
+  position: fixed;
+  top: 0;
+  width: 100%:
+}
+
+.sticky, .content{
+  padding-top: 60px;
+}
+
+
+
+.ImgOfpork{
+  display: block;
+  margin-top: .2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    min-width: 200px;
+    height: auto;
+
+}
