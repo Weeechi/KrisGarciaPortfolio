@@ -80,9 +80,7 @@
     --fw-bold: 900;
 
 
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+
 
 
     --fs-h1: 3rem;
@@ -123,18 +121,23 @@ h1, h2 ,h3 {
   overflow: hidden;
   background: rgb(160,222,222);
   background: linear-gradient(0deg, rgba(160,222,222,1) 0%, rgba(200,162,200,1) 100%);
+  position: sticky;
+  top: 0;
   display: flex;
   justify-content: space-between;
+
 }
 
 #navbar a{
   float: left;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px;
-  padding-right: 150px;
+  padding-right: 20px;
   text-decoration: none;
+  position: sticky;
+  top: 0;
 }
 
 /* footer */
@@ -181,3 +184,29 @@ h1, h2 ,h3 {
 .socialListLink{
   padding: .5em;
 }
+
+/* @media (max-width: 750px;) {
+  #navbar {
+    overflow: hidden;
+    background: rgb(160,222,222);
+    background: linear-gradient(0deg, rgba(160,222,222,1) 0%, rgba(200,162,200,1) 100%);
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  #navbar a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px;
+    padding-right: 20px;
+    text-decoration: none;
+    position: sticky;
+    top: 0;
+  }
+
+} */
