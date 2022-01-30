@@ -34,8 +34,8 @@
 
 
 body {
-  background: rgb(240,211,224);
-  background: radial-gradient(circle, rgba(240,211,224,1) 0%, rgba(125,126,126,1) 100%);
+  background: rgb(160,222,222);
+  background: linear-gradient(0deg, rgba(160,222,222,1) 0%, rgba(200,162,200,1) 100%);
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
@@ -43,15 +43,7 @@ body {
   line-height: 1.6;
 }
 
-section{
-  padding: 5em 2em;
-}
 
-img {
-    display: block;
-    max-width: 100%;
-
-}
 
 
 
@@ -68,7 +60,8 @@ h3 {font-size: var(--fs-h3)}
 
 #navbar {
   overflow: hidden;
-  background-color: grey;
+  background: rgb(160,222,222);
+  background: linear-gradient(0deg, rgba(160,222,222,1) 0%, rgba(200,162,200,1) 100%);
   position: sticky;
   top: 0;
   display: flex;
@@ -79,7 +72,7 @@ h3 {font-size: var(--fs-h3)}
 #navbar a{
   float: left;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px;
   padding-right: 20px;
@@ -117,6 +110,7 @@ h3 {font-size: var(--fs-h3)}
 .sectionSubtitle {
   margin: 0;
   margin-top: .40em;
+  font-family: 'Press Start 2P', cursive;
   font-size: var(--fs-h3);
   background: rgb(162,162,171);
   background: radial-gradient(circle, rgba(162,162,171,1) 0%, rgba(255,252,252,1) 100%);
@@ -127,13 +121,13 @@ h3 {font-size: var(--fs-h3)}
 
 .SectionLowerTitle {
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .SectionLowerSubtitle{
   text-indent: 5;
   text-align:center;
-  color: white;
+  color: black;
 }
 
 
@@ -153,6 +147,52 @@ h3 {font-size: var(--fs-h3)}
     height: auto;
   }
 
+/* footer */
+.footer{
+  background: rgb(162,162,171);
+  background: radial-gradient(circle, rgba(162,162,171,1) 0%, rgba(103,100,100,1) 100%);
+  color: black;
+  text-align: center;
+  padding: 2.5em 0;
+  font-size: var(--fs-h3);
+}
 
+.footer a{
+  color: inherit;
+  text-decoration: none;
+  }
+
+.footerLink{
+    font-weight: var(--fw-bold);
+}
+
+.footerLink:hover;
+.socialList: {
+  opacity: .7;
+}
+
+.footerLink:hover{
+  text-decoration: underline;
+}
+
+.socialList{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.SocialListItem{
+  margin: .5em;
+}
+
+.socialListLink{
+  padding: .5em;
+}
+
+
+
+
+/*  */
 
 /* */
