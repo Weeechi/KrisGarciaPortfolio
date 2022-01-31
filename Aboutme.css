@@ -47,17 +47,17 @@ section{
   padding: 5em 2em;
 }
 
-img {
+/* img {
   display: block;
     margin-top: .2em;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 1%;
     min-width: 2px;
     height: auto;
     border-radius: 50% 20% / 10% 40%;
 
-}
+} */
 
 
 
@@ -111,7 +111,7 @@ h3 {font-size: var(--fs-h3)}
 
 
 
-.PicOfpork{
+/* .PicOfpork{
   display: block;
     margin-top: .2em;
     margin-left: auto;
@@ -120,7 +120,7 @@ h3 {font-size: var(--fs-h3)}
     min-width: 2px;
     height: auto;
 
-}
+} */
 
 /* footer */
 .footer{
@@ -166,67 +166,85 @@ h3 {font-size: var(--fs-h3)}
   padding: .5em;
 }
 
-/* .caraousel{
-width: 100vw;
-height: 100vh;
-position: relative;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-.caraousel > ul{
+body {
+  margin: 0;
+}
+
+.carousel {
+  width: 70vw;
+  height: 80vh;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.carousel > ul {
   margin: 0;
   padding: 0;
   list-style: none;
 
 }
 
-.slide{
+.slide {
   position: absolute;
+  inset: 0;
   opacity: 0;
-
+  transition: 200ms opacity ease-in-out;
+  transition-delay: 200ms;
 }
 
-
-.slide > img{
+.slide > img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  border-radius: 50% 20% / 10% 40%;
+
 }
 
-.slide[data-active]{
-opacity: 1;
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  transition-delay: 0ms;
 }
 
-.caraousel-button{
-
-position: absolute;
-z-index: 2;
-background: none;
-border: none;
-font-size: 4rem;
-top: 50%;
-transform: translateY(-50%);
-color: rgba(255, 255, 255, 0.5);
-cursor: pointer;
-border-radius: .25rem;
-padding: 0 .5rem;
-background-color: rgba(0, 0, 0, 0.1);
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  border-radius: .25rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
 }
 
-.caraousel-button:hover,
-.caraousel-button:focus{
+.carousel-button:hover,
+.carousel-button:focus {
   color: white;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, .2);
 }
 
-.caraousel-button:focus {
+.carousel-button:focus {
   outline: 1px solid black;
 }
 
-.caraousel-button.next{
+.carousel-button.prev {
+  left: 1rem;
+}
+
+.carousel-button.next {
   right: 1rem;
-} */
+}
 
 /* @media (max-width: 750px;) {
   #navbar {
